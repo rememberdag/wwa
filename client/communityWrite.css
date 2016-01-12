@@ -1,0 +1,44 @@
+.boardWrite-intro{
+    background-color: darkslategrey;
+    height: 50px;
+}
+
+.boardWrite {
+    height: 350px;
+}
+
+
+.input-group {
+    margin: 20px;
+}
+
+.input-group-content {
+    margin: 20px;
+    height: 50px;
+}
+.center {
+    height: 80px;
+}
+
+#본문 {
+   height: 200px;
+    overflow: hidden;
+}
+.boardWrite {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.write-center button {
+    text-align: center;
+    width: 60px;
+    height: 35px;
+    background-color: white;
+    border: 2px solid darkslategrey;
+    color: darkslategrey;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 1px;
+    margin-bottom: 10px;
+}

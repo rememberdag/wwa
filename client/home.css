@@ -1,0 +1,222 @@
+a {
+    text-decoration: none;
+}
+
+
+.movie-home {
+    margin: 0 auto;
+    width: 960px
+}
+
+.header-1 {
+    height: 20px;
+    background-color: darkred;
+}
+.header-2 {
+    height: 50px;
+    background-color: white;
+}
+
+.menu-bar {
+    overflow: hidden;
+}
+
+.menu-bar li {
+    float: left;
+    list-style: none;
+}
+.menu-bar li a {
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 24px;
+    font-family: inherit;
+    padding: 13px 20px 11px 20px;
+    line-height: 50px;
+}
+
+.menu-bar li a:hover {
+    background: gainsboro;
+}
+
+.form-inline {
+    float: right;
+    margin: 10px 40px 10px 10px;
+}
+
+.join-btn {
+    text-decoration: none;
+}
+
+/*홈*/
+
+#intro {
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 1.5em;
+}
+
+
+/*푸터*/
+.footer-1 {
+    height: 20px;
+    margin: 5px;
+    text-align: right;
+    color: darkslategrey;
+}
+
+.footer-1 strong {
+    padding: 0 3px;
+}
+
+.footer-1 a {
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+#inc {
+    margin: 0 40px 0 20px;
+}
+
+
+.footer-2 {
+    height: 20px;
+    background-color: darkred;
+}
+
+/*메뉴 스케쥴*/
+
+.schedule {
+    background-color: darkslategrey;
+    height: 130px;
+}
+.schedule h1 {
+    color: white;
+    margin: 0 0 0 70px;
+    padding: 20px 0 15px 0;
+    font-weight: bold;
+}
+.schedule h3 {
+    color: ghostwhite;
+    margin: 0 0 10px 70px;
+    font-weight: lighter;
+    padding: 5px 0 0 0;
+}
+
+
+.movie-see {
+    margin: 0 auto;
+    width: 720px;
+    display: inline-block;
+}
+.movie-see img {
+    float: left;
+    margin: 10px;
+}
+
+.movie-see h2 {
+    color: darkslategrey;
+    margin: 10px 5px 5px 5px;
+    padding-top: 10px
+}
+
+.movie-see p {
+    margin: 5px;
+    width: 700px;
+}
+
+.movie-box {
+    display: block;
+    margin: 0 0 0 100px;
+}
+
+#btn-willGo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    float: right;
+}
+
+
+/*커뮤니티*/
+
+.community {
+    background-color: darkslategrey;
+    height: 130px;
+}
+.community h1 {
+    color: white;
+    margin: 0 0 0 70px;
+    padding: 20px 0 15px 0;
+    font-weight: bold;
+}
+.community h3 {
+    color: ghostwhite;
+    margin: 0 0 10px 70px;
+    font-weight: lighter;
+    padding: 5px 0 0 0;
+}
+
+.community-board {
+    margin: 30px 30px 30px 60px;
+    height: 700px;
+}
+
+.community-board table {
+    border: 1px;
+}
+
+.community-board table thead tr td {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+#lnk_write {
+    margin: 0 250px 0 0;
+    position: absolute;
+    top: 120px;
+    right: 150px;
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+#lnk_write a {
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+#intro {
+    text-align: center;
+    padding: 2px;
+    font-size: 1.5em;
+}
+
+
+/*펀딩*/
+.funding-box img {
+    position: relative;
+    float: left;
+}
+.funding-box {
+    min-height: 800px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.funding-text h2 {
+    position: absolute;
+    text-align: right;
+    top: 150px;
+    right: 60px;
+    width: 820px;
+    margin: 10px;
+}
+
+.funding-text a {
+    text-decoration: none;
+    color: firebrick;
+    font-weight: bold;
+}

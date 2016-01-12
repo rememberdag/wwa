@@ -1,0 +1,31 @@
+<template name="community">
+    <div class="community">
+        <h1><strong>C</strong>ommunity</h1>
+        <h3>
+        영화에 대한 생각을 공유해보세요! 건강한 커뮤니티를 만들어나길 기원합니다.
+        </h3>
+        <a href="/communityWrite">
+            <button id="lnk_write" class="btn btn-default btn-lg">
+                글쓰러가기
+            </button>
+        </a>
+    </div>
+    <div class="community-board">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <td>글번호</td>
+                <td>제목</td>
+                <td>작성자</td>
+                <td>좋아요</td>
+                <td>삭제</td>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each board}}
+                {{>communityItem}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
