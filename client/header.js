@@ -8,16 +8,29 @@ Template.header.helpers({
 });
 Template.header.events({
     "click [name=Join]": function(evt, tmpl) {
+        evt.preventDefault();
         $("#myModal").modal('show');
     },
     "click [name=Logout]": function(evt, tmpl) {
+        evt.preventDefault();
         Meteor.logout();
     },
     "click [name=Login]": function(evt, tmpl) {
-        var ID = $('[name=ID]').val();
-        var PW = $('[name=PW]').val();
+        evt.preventDefault();
+        console.log('login');
+        var ID = $('#ID').val();
+        var PW = $('#PW').val();
         if(!ID) {
-            return alert('ID를 입력해주세요.');
+            //return alert('ID를 입력해주세요.');
+            Meteor.call('customLogin', ID, PW, function(err, rslt){
+                if (err) {
+                    //로그인 실패시 액션
+                    alert(err);
+                }
+                else {
+                    //로그인 성공시 액션
+                }
+            })
         }
         if(!PW) {
             return alert('PW를 입력해주세요.');

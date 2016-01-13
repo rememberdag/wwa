@@ -1,32 +1,37 @@
 <template name="header">
-    <div class="header-1">
+  <div class="header-1">
 
-    </div>
-    <div class="header-2">
-        <ul class="menu-bar">
-            <li><a href="/"><b>WAA</b></a></li>
-            <li><a href="schedule">Movie Schedule</a></li>
-            <li><a href="community">Community</a></li>
-            <li><a href="funding">Funding</a></li>
-            {{#if isLogin}}
-                <!--로그인 되어 있을 때-->
-                {{email}}
-                <button name="Logout">Logout</button>
-            {{else}}
-                <!--로그인이 안되어 있을 때-->
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email or ID">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="exampleInputPassword3">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-                    </div>
-                    <button id=loginbutton name="Login" type="submit" class="btn btn-primary">로그인</button>
-                    <button id=passwordbutton name="Join" class="btn btn-danger">WAA 가입하기</button>
-                </form>
-            {{/if}}
-        </ul>
-    </div>
+  </div>
+  <div class="header-2">
+    <ul class="menu-bar">
+      <li><a href="/"><b>WAA</b></a></li>
+      <li><a href="schedule">Movie Schedule</a></li>
+      <li><a href="community">Community</a></li>
+      <li><a href="funding">Funding</a></li>
+      {{#if currentUser}}
+        <!--로그인 되어 있을 때-->
+        <form class="form-inline">
+          <div class="form-group">
+            <b>{{email}}</b>
+            <button name="Logout" class="btn btn-warning">Logout</button>
+          </div>
+        </form>
+      {{else}}
+        <!--로그인이 안되어 있을 때-->
+        <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+            <input type="email" class="form-control" id="ID" placeholder="Email or ID">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword3">Password</label>
+            <input type="password" class="form-control" id="PW" placeholder="Password">
+          </div>
+          <button id=loginbutton name="Login" class="btn btn-primary">로그인</button>
+          <button name="Join" class="btn btn-danger">WAA 가입하기</button>
+        </form>
+      {{/if}}
+    </ul>
+  </div>
+  {{> join}}
 </template>

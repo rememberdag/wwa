@@ -4,26 +4,28 @@
         <h3>
         영화에 대한 생각을 공유해보세요! 건강한 커뮤니티를 만들어나길 기원합니다.
         </h3>
-        <a href="/communityWrite">
-            <button id="lnk_write" class="btn btn-default btn-lg">
-                글쓰러가기
-            </button>
-        </a>
+      <a href="/boardWrite"><button id=community-write class="btn btn-default btn-lg">글작성</button></a>
     </div>
     <div class="community-board">
-        <table class="table table-hover">
+        <table  class="table table-hover">
             <thead>
-            <tr>
-                <td>글번호</td>
-                <td>제목</td>
-                <td>작성자</td>
-                <td>좋아요</td>
-                <td>삭제</td>
-            </tr>
+                <tr>
+                    <td>글번호</td>
+                    <td>작성자</td>
+                    <td>제목</td>
+                    <td>삭제</td>
+                    <td>좋아요</td>
+                </tr>
             </thead>
             <tbody>
-            {{#each board}}
-                {{>communityItem}}
+            {{#each boards}}
+                <tr>
+                    <td>{{글번호}}</td>
+                    <td>{{작성자}}</td>
+                    <td><a href="/boardDetail/{{_id}}">{{제목}}</a></td>
+                    <td><button class="btn btn-danger" count="{{글번호}}" id="removeOneItem">x</button></td>
+                    <td><button id="btnLike" class="btn btn-{{likeColor}}"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button></td>
+                </tr>
             {{/each}}
             </tbody>
         </table>

@@ -9,15 +9,14 @@ Template.join.onRendered(function() {
 
 Template.join.events({
     'click #btnJoin': function(evt, tmpl) {
-        var email = $("#inputEmail3").val()
-        var pw = $('#inputPassword3').val()
-        console.log(email);
-        console.log(pw);
+        var email = $("#inputEmail3").val();
+        var pw = $('#inputPassword3').val();
 
         options = {};
         options.username = email;
         options.email = email;
         options.password = pw;
+        //options.profile.address = address;
         var rslt = Accounts.createUser(options);
         //console.log(rslt);
         //if(rslt) {
